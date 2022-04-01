@@ -1,0 +1,38 @@
+.searchInput {
+    display:flex;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: var(--white);
+    border-radius: calc(1.5em + 10px) 0 0 calc(1.5em + 10px);
+    flex: 1;
+    color: var(--black);
+    font-size: 1.5em;
+}
+    .searchInput input {
+        flex: 1;
+        height: 1.5em;
+        line-height: 1.5em;
+        font-size: 1em;
+        font-family: sans-serif;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+    .searchInput > span {
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+
+.SearchForm {
+    display: flex;
+}
+
+    .SearchForm button[type="submit"] {
+        border:none;
+        background-color: var(--color);
+        font-size: 1.5em;
+        color: var(--white);
+        padding: 0 20px 0 10px;
+        border-radius: 0 calc(1.5em + 10px) calc(1.5em + 10px) 0;
+    }

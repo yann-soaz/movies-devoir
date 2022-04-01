@@ -1,0 +1,32 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+    .logo {
+        padding: 7px 14px;
+        border-radius: calc(7px + 2rem);
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--black);
+        background-color: rgba(255, 255, 255, .7);
+        letter-spacing: -0.2rem;
+    }
+
+    .linkList {
+        display:flex;
+        list-style: none;
+    }
+        .linkList a {
+            display:block;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 20px;
+            color: white;
+            text-decoration: none;
+            transition: all .3s;
+        }
+        .linkList a:hover {
+            background-color: rgba(255, 255, 255, .4)
+        }

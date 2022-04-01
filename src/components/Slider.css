@@ -1,0 +1,17 @@
+    .Slider .innerSlider {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        margin-right: calc(-5vw + -15px);
+        padding-bottom: 20px
+    }
+    .Slider .innerSlider::-webkit-scrollbar {
+        display: none;
+    }
+        .Slider .innerSlider > *{
+            min-width: clamp(200px, 35vw, 300px);;
+            scroll-snap-align: start;
+        }
+        .Slider .innerSlider > *:not(:first-child){
+            margin-left: 20px;
+        }

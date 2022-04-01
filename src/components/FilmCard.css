@@ -1,0 +1,69 @@
+.FilmCard {
+    position:relative;
+}
+    .FilmCard h3 {
+        padding: 50px 10px 10px;
+        color: var(--white);
+        background: linear-gradient(to bottom, transparent, var(--shade) 40px);
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        font-size: 1.5em
+    }
+    .FilmCard img {
+        border-radius: 10px;
+        width: 100%;
+        aspect-ratio: 2/3;
+        vertical-align: middle;
+        box-shadow: 0 10px 15px -5px var(--shade)
+    }
+    
+    .FilmCard .filmNote {
+        position:absolute;
+        top: 10px;
+        right: 10px;
+        color: var(--black);
+        font-size: .8em;
+        background-color: var(--white);
+        padding: 7px 13px;
+        border-radius: calc(.6em + 10px);
+        box-shadow:0 10px 20px -15px var(--shade);
+    }
+        .FilmCard .actions {
+            display: inline-block;
+            position:absolute;
+            right: 100%;
+            top: 0;
+            display:flex;
+        }
+        .FilmCard:hover .actions span, .FilmCard:hover .actions span:first-child {
+            transform: translateX(0);
+            opacity: 1
+        }
+        .FilmCard .actions span:first-child {
+            transform: translateX(200%);
+        }
+        .FilmCard .actions span:hover, .FilmCard .actions span:first-child:hover {
+            opacity: .8;
+            transform: scale(1.1);
+        }
+        .FilmCard .actions span.active {
+            background-color: rgb(125, 68, 148);
+            color: var(--white)
+        }
+        .FilmCard .actions span {
+            transform: translateX(100%);
+            transition: all .3s;
+            opacity: 0;
+            display: inline-block;
+            background-color: var(--white);
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            height: 2.5em;
+            line-height: 2.7em;
+            text-align:center;
+            margin: 0 5px;
+            cursor: pointer;
+        }
