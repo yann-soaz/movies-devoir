@@ -11,9 +11,9 @@ const SearchForm = ({onUpdate, search}) => {
         setQuery('')
     }
     return (
-        <form className="SearchForm container" onSubmit={() => onUpdate(query)}>
+        <form className="SearchForm container" onSubmit={(e) => {e.preventDefault(); onUpdate(query)}}>
             <div className="searchInput">
-                <input placeholder="Film recherché" type="text" value={query} onChange={(e) => setQuery(e.target.value)} />
+                <input placeholder="Film recherché" type="text" value={query} onChange={(e) => {setQuery(e.target.value); onUpdate(query)}} />
                 <span onClick={() => reset()}>
                     <FiX />
                 </span>

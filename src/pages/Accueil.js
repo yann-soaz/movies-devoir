@@ -15,7 +15,6 @@ const Accueil = () => {
                 .then(response => (response) ? setToday(response.results) : setToday(false))
             api.discover().get()
                 .then(response => (response) ? setDiscover(response.results) : setDiscover(false))
-
         }, []
     )
     return (
